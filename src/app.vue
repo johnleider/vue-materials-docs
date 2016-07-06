@@ -5,7 +5,9 @@
         </header>
 
         <main>
-            <div class="container"></div>
+            <div class="container">
+                
+            </div>
         </main>
 
         <main-footer></main-footer>
@@ -13,13 +15,24 @@
 </template>
 
 <script>
+    import parser from './utils/parser'
+
     export default {
         name: 'App',
 
         data () {
             return {
-                title: 'Badges'
+                title: 'Badges',
+                template: '',
+                script: ''
             }
+        },
+
+        mounted () {
+            parser.call(this, 'badge').then(({ template, script }) => {
+                this.template = template
+                this.script = script
+            })
         }
     }
 </script>
