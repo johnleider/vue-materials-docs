@@ -14,5 +14,6 @@ export default {
     BadgeDoc,
     BreadcrumbsDoc,
     ButtonDoc,
+    CarouselDoc,
     SliderDoc
 }
