@@ -7,16 +7,8 @@
     "dev": "webpack-dev-server --inline --hot --host=0.0.0.0",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "font-loader": "^0.1.2",
-    "node-sass": "^3.8.0",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
-    "vue": "^2.0.0-alpha.8",
-    "vue-hot-reload-api": "^2.0.5",
     "babel-cli": "^6.10.1",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
@@ -25,6 +17,13 @@
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.4",
+    "font-loader": "^0.1.2",
+    "highlight.js": "^9.5.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "vue": "^2.0.0-alpha.8",
+    "vue-hot-reload-api": "^2.0.5",
     "vue-loader": "^9.0.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"

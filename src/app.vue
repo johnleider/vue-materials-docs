@@ -1,12 +1,16 @@
 <template>
     <div id="app">
         <header>
-            <main-nav :title="title"></main-nav>
+            <main-nav :title="selected"
+                      @select="select"
+            ></main-nav>
         </header>
 
         <main>
             <div class="container">
-                
+                <div class="row">
+                    <component :is="component" :show="show" keep-alive></component>
+                </div>
             </div>
         </main>
 
@@ -22,17 +26,24 @@
 
         data () {
             return {
-                title: 'Badges',
-                template: '',
-                script: ''
+                selected: 'Badge'
             }
         },
 
-        mounted () {
-            parser.call(this, 'badge').then(({ template, script }) => {
-                this.template = template
-                this.script = script
-            })
+        computed: {
+            component () {
+                return `${this.selected.toLowerCase()}-doc`
+            },
+
+            show () {
+                return this.selected.toLowerCase()
+            }
+        },
+
+        methods: {
+            select (component) {
+                this.selected = component
+            }
         }
     }
 </script>
@@ -56,7 +67,7 @@
       }
     }
 
-    nav {
-        height: auto;
+    h4 {
+        margin-top: 6rem;
     }
 </style>

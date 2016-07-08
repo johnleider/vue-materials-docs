@@ -15,8 +15,11 @@
                       id="side-nav" 
                       fixed
         >
-            <li v-for="item in items">
-                <a :href="item" v-text="item"></a>
+            <li v-for="item in items" :class="{ 'active': item === title }">
+                <a :href="item" 
+                   v-text="item"
+                   @click.prevent="select(item)"
+                ></a>
             </li>
         </app-side-nav>
     </app-nav>
@@ -26,15 +29,25 @@
     export default {
         data () {
             return {
-                items: ['Badges']
+                items: ['Badge', 'Breadcrumbs', 'Button', 'Carousel', 'Slider']
             }
         },
 
-        props: ['title']
+        props: ['title'],
+
+        methods: {
+            select (item) {
+                this.$emit('select', item)
+            }
+        }
     }
 </script>
 
 <style scoped>
+    nav {
+        height: auto;
+    }
+
     .page-title {
         padding: 2rem 0;
         margin: 0;
