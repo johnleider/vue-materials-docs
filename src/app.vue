@@ -26,7 +26,7 @@
 
         data () {
             return {
-                selected: 'Badges'
+                selected: 'Badge'
             }
         },
 
