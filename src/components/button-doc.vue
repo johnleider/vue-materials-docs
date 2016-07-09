@@ -1,36 +1,110 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <btn>Primary</btn>
-        <btn class="red">Red</btn>
-        <btn class="blue">Blue</btn>
-        <btn class="pink" large>Large</btn>
+        <btn>Button</btn>
+        <markup html="
+        <btn>Button</btn>"
+        ></markup>
+        <btn class="red" large>Large Button</btn>
+        <markup html='
+        <btn class="red" 
+             large
+        >
+            Large Button
+        </btn>'
+        ></markup>
         <btn disabled>Disabled</btn>
-        <btn class="purple white-text" flat>Flat</btn>
-        <btn class="yellow" waves-light>Waves</btn>
-        <btn class="red darken-2" waves-red>Red Waves</btn>
-        <btn class="green">Icon <icon class="right">build</icon></btn>
-        <btn class="yellow darken-3" v-dropdown:dropdown>Dropdown</btn>
+        <markup html="
+        <btn disabled>Disabled</btn>"
+        ></markup>
+        <btn waves-light>With Waves</btn>
+        <markup html="
+        <btn waves-light>With Waves</btn>"
+        ></markup>
+        <btn-link href="#!">Button Link</btn-link>
+        <markup html='
+        <btn-link href="#!">Button Link</btn-link>'
+        ></markup>
+        <btn-link modal flat>Flat</btn-link>
+        <markup html='
+        <btn-link flat 
+                  modal
+        >
+            Flat
+        </btn-link>'
+        ></markup>
         <btn floating><icon>list</icon></btn>
-        <btn floating large class="green lighten-2"><icon>lightbulb_outline</icon></btn>
-        <dropdown id="dropdown">
-            <li>
-                <a href="#!">Option 1</a>
-            </li>
-            <li>
-                <a href="#!">Option 2</a>
-            </li>
-            <li>
-                <a href="#!">Option 3</a>
-            </li>
-        </dropdown>
-        <main-source :show="show"></main-source>
+        <markup html='
+        <btn floating>
+            <icon>list</icon>
+        </btn>'
+        ></markup>
+        <props :props="button_props"></props>
+        <h4>Fixed Action Button</h4>
+        <fab horizontal>
+            <btn-link floating
+                      large
+                      slot="btn"
+            >
+                <icon>list</icon>
+            </btn-link>
+            <ul slot="items">
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+            </ul>
+        </fab>
+        <markup html='
+        <fab horizontal>
+            <btn-link floating
+                      large
+                      slot="btn"
+            >
+                <icon>list</icon>
+            </btn-link>
+            <ul slot="items">
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+                <li>
+                    <btn-link floating><icon>add</icon></btn-link>
+                </li>
+            </ul>
+        </fab>'
+        ></markup>
+        <props :props="fab_props"></props>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['show']
+        props: ['show'],
+
+        data () {
+            return {
+                button_props: [
+                    ['disabled', 'boolean'],
+                    ['flat', 'boolean'],
+                    ['modal', 'boolean'],
+                    ['floating', 'boolean'],
+                    ['large', 'boolean'],
+                    ['type (<btn> only)', 'string']
+                ],
+                fab_props: [
+                    ['horizontal', 'boolean'],
+                    ['clickable', 'boolean']
+                ]
+            }
+        }
     }
 </script>
 

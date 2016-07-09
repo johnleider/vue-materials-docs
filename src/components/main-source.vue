@@ -1,53 +1,22 @@
 <template>
-    <card panel>
-        <div class="row">
-            <div class="col s12">
-                <tabs>
-                    <tab target="#template" 
-                         selected
-                    >
-                        Template  
-                    </tab>
-                    <tab target="#script">
-                        Script  
-                    </tab>
-                    <tab target="#style"
-                         v-if="style"
-                    >
-                        Style
-                    </tab>
-                </tabs>
-            </div>
-            <div class="col s12"
-                 id="template"
-            >
-                <pre>
-                    <code class="html" 
-                          ref="template"
-                    >{{ template }}</code>
-                </pre>
-            </div>
-            <div class="col s12"
-                 id="script"
-            >
-                <pre>
-                    <code class="javascript"
-                          ref="script"
-                    >{{ script }}</code>
-                </pre>
-            </div>
-            <div class="col s12"
-                 id="style"
-                 v-if="style"
-            >
-                <pre>
-                    <code class="css"
-                          ref="style"
-                    >{{ styled }}</code>
-                </pre>
-            </div>
-        </div>
-    </card>
+    <div class="markup">
+        <pre>
+            <code ref="markup">{{ markup }}</code>
+        </pre>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prop</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="prop in props">
+                    <td v-for="value in prop">{{ value }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script>
@@ -62,49 +31,21 @@
             }
         },
 
-        props: ['show'],
-
-        watch: {
-            show () {
-                this.get()
-            }
-        },
+        props: ['markup', 'props'],
 
         mounted () {
-            this.get()
+            this.highlight()
         },
 
         methods: {
-            get () {
-                parser.call(this, this.show).then(({ template, script, style }) => {
-                    this.template = template
-                    this.script = script
-                    this.style = style
-                    this.$nextTick(() => this.highlight())
-                })
-            },
-
             highlight () {
-                hljs.highlightBlock(this.$refs.template)
-                
-                if (this.script) {
-                    hljs.highlightBlock(this.$refs.script)
-                }
-                
-                if (this.style) {
-                    hljs.highlightBlock(this.$refs.style)
-                }
+                hljs.highlightBlock(this.$refs.markup)
             }
         }
     }
 </script>
 
 <style scoped>
-    .card-panel {
-        margin-top: 5rem;
-        margin-bottom: 0;
-    }
-
     .row {
         margin-bottom: 0 !important;
     }

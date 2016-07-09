@@ -9,7 +9,7 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <component :is="component" :show="show" keep-alive></component>
+                    <component :is="component" :show="show"></component>
                 </div>
             </div>
         </main>
@@ -26,7 +26,7 @@
 
         data () {
             return {
-                selected: 'Badge'
+                selected: 'Tabs'
             }
         },
 

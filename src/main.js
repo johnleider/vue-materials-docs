@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Materials from 'vue-materials'
 import Resource from 'vue-resource'
-import Components from './components/index'
+import Components from './components/_index'
 import App from './app.vue'
 
 Vue.use(Resource)
