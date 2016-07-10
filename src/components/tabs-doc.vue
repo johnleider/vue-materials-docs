@@ -2,7 +2,7 @@
     <div class="col s12">
         <h4>Example</h4>
         <tabs>
-            <tab :target="`#tab${n}`" v-for="n in 5">Tab {{ n }}</tab>
+            <tab :target="'#tab' + n" v-for="n in 5">Tab {{ n }}</tab>
         </tabs>
         <markup html='
         <tabs>
@@ -12,7 +12,7 @@
         </tabs>'
         ></markup>
         <tabs>
-            <tab :target="`#tab${n}`" v-for="n in 10">Tab {{ n }}</tab>
+            <tab :target="'#tab' + n" v-for="n in 10">Tab {{ n }}</tab>
         </tabs>
         <props :props="tabs_props"></props>
         <markup html='
