@@ -5,6 +5,24 @@
         <markup html='
         <breadcrumbs :items="items"></breadcrumbs>'
         ></markup>
+        <h4>Slot</h4>
+        <breadcrumbs>
+            <a v-for="item in items"
+               :href="item.href"
+               class="breadcrumb"
+            >
+                {{ item.text }}
+            </a>
+        </breadcrumbs>
+        <markup html='
+        <breadcrumbs>
+            <a v-for="item in items"
+               :href="item.href"
+               class="breadcrumb"
+               v-text="item.text">
+            </a>
+        </breadcrumbs>'
+        ></markup>
         <h4>Array</h4>
         <markup html="
         {

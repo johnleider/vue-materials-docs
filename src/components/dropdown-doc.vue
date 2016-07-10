@@ -27,6 +27,7 @@
             </li>
         </dropdown>'
         ></markup>
+        <h4>Hover</h4>
         <btn v-dropdown:dropdown2 class="red" hover>dropdown</btn>
         <dropdown id="dropdown2">
             <li>
@@ -40,7 +41,7 @@
             </li>
         </dropdown>
         <markup html='
-        <btn v-dropdown:dropdown2 class="red">dropdown</btn>
+        <btn v-dropdown:dropdown2 class="red" hover>dropdown</btn>
         <dropdown id="dropdown2">
             <li>
                 <a href="#!">Click me!</a>

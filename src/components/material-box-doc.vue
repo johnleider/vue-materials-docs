@@ -1,13 +1,9 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <material-box src="http://materializecss.com/images/sample-1.jpg"
-                      width="100%"
-        ></material-box>
+        <material-box src="http://materializecss.com/images/sample-1.jpg"></material-box>
         <markup html='
-        <material-box src="http://materializecss.com/images/sample-1.jpg"
-                      width="100%"
-        ></material-box>'
+        <material-box src="http://materializecss.com/images/sample-1.jpg"></material-box>'
         ></markup>
         <h4>Captions</h4>
         <material-box :width="250" 

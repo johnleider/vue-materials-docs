@@ -1,8 +1,9 @@
 <template>
     <div class="col s12">
         <h4>Determinate</h4>
+        <range v-model="range"></range>
         <progress-linear determinate 
-                         width="50%"
+                         v-model="width_l"
         ></progress-linear>
         <markup html='
         <progress-linear determinate 
@@ -66,13 +67,18 @@
                     ['indeterminate', 'boolean'],
                     ['v-model', 'string']
                 ],
-                interval: {}
+                interval: {},
+                range: 20
             }
         },
 
         computed: {
             width () {
                 return this.number.toString() + '%'
+            },
+
+            width_l () {
+                return this.range.toString() + '%'
             }
         },
 

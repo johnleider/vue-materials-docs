@@ -1,7 +1,7 @@
 <template>
     <div class="col s12">
         <h4>Carousel w/ srcs</h4>
-        <carousel :srcs="srcs"></carousel>
+        <carousel :items="srcs"></carousel>
         <markup html='
         <carousel :srcs="srcs"></carousel>'
         ></markup>

@@ -45,7 +45,9 @@
                     ['small', 'boolean'],
                     ['medium', 'boolean'],
                     ['large', 'boolean'],
-                    ['prefix', 'boolean']
+                    ['prefix', 'boolean'],
+                    ['right', 'boolean'],
+                    ['left', 'boolean']
                 ]
             }
         }

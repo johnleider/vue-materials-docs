@@ -8,6 +8,7 @@
                     <a href="#!">Item</a>
                 </li>
             </ul>
+            <app-side-nav slot="side-nav"></app-side-nav>
         </app-nav>
         <markup html='
         <app-nav>
@@ -17,6 +18,7 @@
                     <a href="#!">Item</a>
                 </li>
             </ul>
+            <app-side-nav slot="side-nav"></app-side-nav>
         </app-nav>'
         ></markup>
     </div>
