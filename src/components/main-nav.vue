@@ -57,7 +57,7 @@
         data () {
             return {
                 items: {
-                    // about: 'About',
+                    about: 'About',
                     directives: 'Directives',
                     functional: 'Functional',
                     Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']

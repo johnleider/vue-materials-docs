@@ -9,7 +9,7 @@
         </p>
         <h4>Modals</h4>
         <markup html='
-        v-modal:id="params'
+        v-modal:id="params"'
         ></markup>
         <p>
             Create a <strong>&lt;modal&gt;</strong> element with an id. Activate it by applying v-modal to any element. Pass modal parameters through the expression.

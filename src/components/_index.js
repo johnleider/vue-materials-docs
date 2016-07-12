@@ -34,8 +34,10 @@ import TextAreaDoc from './text-area-doc.vue'
 import Markup from './markup.vue'
 import Props from './props.vue'
 import DirectivesDoc from './directives-doc.vue'
+import AboutDoc from './about-doc.vue'
 
 export default {
+    AboutDoc,
     DirectivesDoc,
     FunctionalDoc,
     Props,

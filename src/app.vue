@@ -26,7 +26,7 @@
 
         data () {
             return {
-                selected: 'Directives'
+                selected: 'About'
             }
         },
 
