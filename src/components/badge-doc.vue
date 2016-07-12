@@ -53,7 +53,7 @@
         </dropdown>'
         ></markup>
         <h4>In Navbars</h4>
-        <app-nav>
+        <m-nav>
             <a href="#!" slot="logo" class="brand-logo">Logo</a>
             <ul slot="items" class="right">
                 <li>
@@ -66,9 +66,9 @@
                     <a href="#!">sass</a>
                 </li>
             </ul>
-        </app-nav>
+        </m-nav>
         <markup html='
-        <app-nav>
+        <m-nav>
             <a href="#!" slot="logo" class="brand-logo">Logo</a>
             <ul slot="items" class="right">
                 <li>
@@ -81,7 +81,7 @@
                     <a href="#!">sass</a>
                 </li>
             </ul>
-        </app-nav>'
+        </m-nav>'
         ></markup>
         <props :props="props"></props>
     </div>
@@ -89,8 +89,6 @@
 
 <script>
     export default {
-        props: ['show'],
-
         data () {
             return {
                 props: [

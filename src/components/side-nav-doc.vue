@@ -2,22 +2,22 @@
     <div class="col s12">
         <h4>Example</h4>
         <btn-link v-side-nav:demo="{ edge: 'right' }">Click Me</btn-link>
-        <app-side-nav id="demo">
+        <m-side-nav id="demo">
             <ul>
                 <li v-for="n in 5">
                     <a href="#!">Link</a>
                 </li>
             </ul>
-        </app-side-nav>
+        </m-side-nav>
         <markup html='
         <btn-link v-side-nav:demo="nav">Click Me</btn-link>
-        <app-side-nav id="demo">
+        <m-side-nav id="demo">
             <ul>
                 <li v-for="n in 5">
                     <a href="#!">Link</a>
                 </li>
             </ul>
-        </app-side-nav>'
+        </m-side-nav>'
         ></markup>
         <markup html="
         export default {

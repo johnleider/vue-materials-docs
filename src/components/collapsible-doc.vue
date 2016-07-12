@@ -14,8 +14,8 @@
                 </grid>
             </row>
         </card>
-        <collapsible :collapsible="collapsible" 
-                     :expandable="expandable"
+        <collapsible :collapse="collapsible" 
+                     :expand="expandable"
                      :popout="popout"
                      ref="collapse"
         >
@@ -45,7 +45,7 @@
             </li>
         </collapsible>
         <markup html='
-        <collapsible>
+        <collapsible collapse>
             <li>
                 <collapsible-header>
                     <icon>filter_drama</icon> First
@@ -99,8 +99,8 @@
                 popout: false,
                 type: 'collapsible',
                 props: [
-                    ['collapsible', 'boolean'],
-                    ['expandable', 'boolean'],
+                    ['collapse', 'boolean'],
+                    ['expand', 'boolean'],
                     ['popout', 'boolean']
                 ]
             }

@@ -26,7 +26,7 @@
 
         data () {
             return {
-                selected: 'Badge'
+                selected: 'Directives'
             }
         },
 

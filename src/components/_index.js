@@ -13,6 +13,7 @@ import CollectionDoc from './collection-doc.vue'
 import DropdownDoc from './dropdown-doc.vue'
 import FabDoc from './fab-doc.vue'
 import MaterialBoxDoc from './material-box-doc.vue'
+import FunctionalDoc from './functional-doc.vue'
 import ModalDoc from './modal-doc.vue'
 import PaginationDoc from './pagination-doc.vue'
 import DateInputDoc from './date-input-doc.vue'
@@ -32,8 +33,11 @@ import TextInputDoc from './text-input-doc.vue'
 import TextAreaDoc from './text-area-doc.vue'
 import Markup from './markup.vue'
 import Props from './props.vue'
+import DirectivesDoc from './directives-doc.vue'
 
 export default {
+    DirectivesDoc,
+    FunctionalDoc,
     Props,
     Markup,
     RangeDoc,

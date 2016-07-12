@@ -1,6 +1,6 @@
 <template>
-    <app-nav>
-        <div slot="items">
+    <m-nav class="nav-header">
+        <div>
             <h1 class="page-title">
                 <a href="#!"
                    class="left button-collapse"
@@ -11,25 +11,58 @@
                 {{ title }}
             </h1>
         </div>
-        <app-side-nav slot="side-nav" 
-                      id="side-nav" 
-                      fixed
+        <m-side-nav slot="side-nav" 
+                    id="side-nav" 
+                    fixed
         >
-            <li v-for="item in items" :class="{ 'active': item === title }">
-                <a :href="item" 
-                   v-text="item"
-                   @click.prevent="select(item)"
-                ></a>
-            </li>
-        </app-side-nav>
-    </app-nav>
+            <template v-for="(value, key) in items">
+                <li v-if="typeof value === 'string'"
+                    :class="{ 'active': value === title }"
+                >
+                    <a :href="value" 
+                       v-text="value"
+                       @click.prevent="select(value)"
+                    ></a>
+                </li>
+                <li class="no-padding" v-else>
+                    <collapsible collapse>
+                        <li>
+                            <collapsible-header class="black-text"
+                                                ref="collapse"
+                            >
+                                {{ key }}
+                            </collapsible-header>
+                            <collapsible-body>
+                                <ul>
+                                    <li v-for="item in value"
+                                        :class="{ 'active': title === item }"
+                                    >
+                                        <a :href="item" 
+                                           v-text="item"
+                                           @click.prevent="select(item)"
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </collapsible-body>
+                        </li>
+                    </collapsible>
+                </li>
+            </template>
+        </m-side-nav>
+    </m-nav>
 </template>
 
 <script>
     export default {
         data () {
             return {
-                items: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
+                items: {
+                    // about: 'About',
+                    directives: 'Directives',
+                    functional: 'Functional',
+                    Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
+                },
+                icon: 'keyboard_arrow_down'
             }
         },
 
@@ -43,9 +76,9 @@
     }
 </script>
 
-<style scoped>
-    nav {
-        height: auto;
+<style>
+    .nav-header nav {
+        height: auto !important;
     }
 
     .page-title {
