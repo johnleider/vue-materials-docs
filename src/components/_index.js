@@ -34,12 +34,14 @@ import TextAreaDoc from './text-area-doc.vue'
 import Markup from './markup.vue'
 import Props from './props.vue'
 import DirectivesDoc from './directives-doc.vue'
-import AboutDoc from './about-doc.vue'
+import InstallDoc from './install-doc.vue'
 import DialogDoc from './dialog-doc.vue'
+import FormsDoc from './forms-doc.vue'
 
 export default {
+    FormsDoc,
     DialogDoc,
-    AboutDoc,
+    InstallDoc,
     DirectivesDoc,
     FunctionalDoc,
     Props,

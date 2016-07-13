@@ -4,15 +4,15 @@
             <h1 class="page-title">
                 <a href="#!"
                    class="left button-collapse"
-                   v-side-nav:side-nav
+                   v-side-nav:side-nav="{ closeOnClick: true }"
                 >
                     <icon>menu</icon>
                 </a>
                 {{ title }}
             </h1>
         </div>
-        <m-side-nav slot="side-nav" 
-                    id="side-nav" 
+        <m-side-nav slot="side-nav"
+                    id="side-nav"
                     fixed
         >
             <template v-for="(value, key) in items">
@@ -25,9 +25,9 @@
                     ></a>
                 </li>
                 <li class="no-padding" v-else>
-                    <collapsible collapse>
+                    <collapsible collapse >
                         <li>
-                            <collapsible-header class="black-text"
+                            <collapsible-header class="black-text waves-effect waves-teal"
                                                 ref="collapse"
                             >
                                 {{ key }}
@@ -57,11 +57,11 @@
         data () {
             return {
                 items: {
-                    about: 'About',
+                    install: 'Install',
                     directives: 'Directives',
                     functional: 'Functional',
                     dialog: 'Dialog',
-                    Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
+                    Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Forms', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
                 },
                 icon: 'keyboard_arrow_down'
             }

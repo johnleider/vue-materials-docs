@@ -8,7 +8,7 @@
                               href="https://github.com/johnleider/vue-materials"
                               target="_blank"
                     >
-                        Github <icon right>link</icon>
+                        Github
                     </btn-link>
                 </div>
                 <div class="col s6">
@@ -17,7 +17,7 @@
                               href="https://www.npmjs.com/package/vue-materials"
                               target="_blank"
                     >
-                        Nodejs <icon right>link</icon>
+                        NPM
                     </btn-link>
                 </div>
             </div>
