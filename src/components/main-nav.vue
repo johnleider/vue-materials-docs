@@ -4,7 +4,8 @@
             <h1 class="page-title">
                 <a href="#!"
                    class="left button-collapse"
-                   v-side-nav:side-nav="{ closeOnClick: true }"
+                   v-side-nav:side-nav="nav"
+                   ref="nav"
                 >
                     <icon>menu</icon>
                 </a>
@@ -63,15 +64,26 @@
                     dialog: 'Dialog',
                     Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Forms', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
                 },
-                icon: 'keyboard_arrow_down'
+                icon: 'keyboard_arrow_down',
+                nav: {
+                    closeOnClick: false
+                }
             }
         },
 
         props: ['title'],
 
+        mounted () {
+            this.nav_close()
+        },
+
         methods: {
             select (item) {
                 this.$emit('select', item)
+            },
+
+            nav_close () {
+                this.nav.closeOnClick = window.innerWidth < 993
             }
         }
     }

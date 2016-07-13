@@ -23,16 +23,16 @@
         </p>
         <h4>Tooltips</h4>
         <row>
-            <grid s3>
+            <grid s12 m6 l3>
                 <btn class="red" v-tooltip:top="'Tooltip Top'">Top</btn>
             </grid>
-            <grid s3>
+            <grid s12 m6 l3>
                 <btn class="red" v-tooltip:right="'Tooltip Right'">Right</btn>
             </grid>
-            <grid s3>
+            <grid s12 m6 l3>
                 <btn class="red" v-tooltip:bottom="'Tooltip Bottom'">Bottom</btn>
             </grid>
-            <grid s3>
+            <grid s12 m6 l3>
                 <btn class="red" v-tooltip:left="'Tooltip Left'">Left</btn>
             </grid>
         </row>
@@ -51,3 +51,9 @@
         }
     }
 </script>
+
+<style>
+    .btn {
+        margin-bottom: 1rem;
+    }
+</style>
