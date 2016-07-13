@@ -35,8 +35,10 @@ import Markup from './markup.vue'
 import Props from './props.vue'
 import DirectivesDoc from './directives-doc.vue'
 import AboutDoc from './about-doc.vue'
+import DialogDoc from './dialog-doc.vue'
 
 export default {
+    DialogDoc,
     AboutDoc,
     DirectivesDoc,
     FunctionalDoc,

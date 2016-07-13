@@ -60,6 +60,7 @@
                     about: 'About',
                     directives: 'Directives',
                     functional: 'Functional',
+                    dialog: 'Dialog',
                     Components: ['Badge', 'Breadcrumbs', 'Button', 'Card', 'Carousel', 'Chip', 'Collapsible', 'Collection', 'Dropdown', 'Footer', 'Icon', 'Material-Box', 'Modal', 'Nav', 'Pagination', 'Parallax', 'Progress-Circular', 'Progress-Linear', 'Range', 'Side-Nav', 'Slider', 'Tabs']
                 },
                 icon: 'keyboard_arrow_down'
