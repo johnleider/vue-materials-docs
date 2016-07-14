@@ -26,7 +26,7 @@
 
         data () {
             return {
-                selected: 'Install'
+                selected: 'Forms'
             }
         },
 
@@ -55,6 +55,7 @@
 
     main {
         min-height: 83.1vh;
+        padding-bottom: 3rem;
     }
 
     header, main, footer {

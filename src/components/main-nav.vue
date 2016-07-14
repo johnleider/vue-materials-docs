@@ -39,9 +39,8 @@
                                         :class="{ 'active': title === item }"
                                     >
                                         <a :href="item" 
-                                           v-text="item"
                                            @click.prevent="select(item)"
-                                        ></a>
+                                        >{{ item }} <badge new v-if="item === 'Forms'"></badge></a>
                                     </li>
                                 </ul>
                             </collapsible-body>
