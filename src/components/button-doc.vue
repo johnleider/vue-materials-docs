@@ -3,22 +3,22 @@
         <h4>Examples</h4>
         <card panel>
             <div class="row">
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="large" id="large" name="large">Large</checkbox>
                 </div>
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="disabled" id="disabled" name="disabled">Disabled</checkbox>
                 </div>
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="icon" id="icon" name="icon">Icon</checkbox>
                 </div>
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="waves" id="waves" name="waves">Waves</checkbox>
                 </div>
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="flat" id="flat" name="flat">Flat</checkbox>
                 </div>
-                <div class="col s2">
+                <div class="col s6 m4 l2">
                     <checkbox v-model="floating" id="floating" name="floating">Floating</checkbox>
                 </div>
             </div>

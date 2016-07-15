@@ -8,7 +8,9 @@
                             id="first"
                             placeholder="First Name"
                 ></text-input>
-                <label for="first">First Name</label>
+                <label for="first"
+                       class="active"
+                >First Name</label>
             </div>
         </grid>
         <grid s6>

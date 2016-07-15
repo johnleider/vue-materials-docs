@@ -3,13 +3,13 @@
         <h4>Example</h4>
         <card panel class="center">
             <row>
-                <grid s4>
+                <grid s12 m4 l4>
                     <radio with-gap name="type" id="collapsible" v-model="type" val="collapsible">Collapsible</radio>
                 </grid>
-                <grid s4>
+                <grid s12 m4 l4>
                     <radio with-gap name="type" id="expandable" v-model="type" val="expandable">Expandable</radio>
                 </grid>
-                <grid s4>
+                <grid s12 m4 l4>
                     <checkbox name="popout" id="popout" v-model="popout">Popout</checkbox>
                 </grid>
             </row>

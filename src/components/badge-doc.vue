@@ -54,7 +54,7 @@
         ></markup>
         <h4>In Navbars</h4>
         <m-nav>
-            <a href="#!" slot="logo" class="brand-logo">Logo</a>
+            <a href="#!" slot="logo" class="brand-logo hide-on-med-and-down">Logo</a>
             <ul class="right">
                 <li>
                     <a href="#!">sass <badge new></badge></a>
@@ -70,7 +70,7 @@
         <markup html='
         <m-nav>
             <a href="#!" slot="logo" class="brand-logo">Logo</a>
-            <ul slot="items" class="right">
+            <ul class="right">
                 <li>
                     <a href="#!">sass <badge new></badge></a>
                 </li>
