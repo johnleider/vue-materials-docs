@@ -24,7 +24,7 @@
 
         data () {
             return {
-                selected: 'Dialog'
+                selected: 'Install'
             }
         },
 
