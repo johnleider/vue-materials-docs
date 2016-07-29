@@ -20,8 +20,6 @@
 </template>
 
 <script>
-    import parser from '../utils/parser'
-
     export default {
         data () {
             return {

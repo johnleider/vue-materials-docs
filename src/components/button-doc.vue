@@ -1,75 +1,75 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <card panel>
+        <v-card panel>
             <div class="row">
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="large" id="large" name="large">Large</checkbox>
+                    <v-checkbox v-model="large" id="large" name="large">Large</v-checkbox>
                 </div>
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="disabled" id="disabled" name="disabled">Disabled</checkbox>
+                    <v-checkbox v-model="disabled" id="disabled" name="disabled">Disabled</v-checkbox>
                 </div>
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="icon" id="icon" name="icon">Icon</checkbox>
+                    <v-checkbox v-model="icon" id="v-icon" name="v-icon">icon</v-checkbox>
                 </div>
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="waves" id="waves" name="waves">Waves</checkbox>
+                    <v-checkbox v-model="waves" id="waves" name="waves">Waves</v-checkbox>
                 </div>
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="flat" id="flat" name="flat">Flat</checkbox>
+                    <v-checkbox v-model="flat" id="flat" name="flat">Flat</v-checkbox>
                 </div>
                 <div class="col s6 m4 l2">
-                    <checkbox v-model="floating" id="floating" name="floating">Floating</checkbox>
+                    <v-checkbox v-model="floating" id="floating" name="floating">Floating</v-checkbox>
                 </div>
             </div>
             <div class="center">
-                <btn :large="large"
+                <v-btn :large="large"
                      :disabled="disabled"
                      :waves-light="waves"
                      :flat="flat"
                      :floating="floating"
-                ><span v-if="!floating">Button</span> <icon v-if="icon || floating" right>list</icon></btn>
+                ><span v-if="!floating">Button</span> <v-icon v-if="icon || floating" right>list</v-icon></v-btn>
             </div>
-        </card>
+        </v-card>
         <markup html="
-        <btn>Button</btn>"></markup>
+        <v-btn>Button</v-btn>"></markup>
         <markup html='
-        <btn-link href="#!">Button</btn-link>'></markup>
+        <v-btn-link href="#!">Button</v-btn-link>'></markup>
         <props :props="button_props"></props>
         <h4>Fixed Action Button</h4>
-        <fab icon="list" horizontal>
+        <v-fab icon="list" horizontal>
             <ul slot="items">
                 <li>
-                    <btn-link floating class="red"><icon>insert_chart</icon></btn-link>
+                    <v-btn-link floating class="red"><v-icon>insert_chart</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="yellow darken-1"><icon>format_quote</icon></btn-link>
+                    <v-btn-link floating class="yellow darken-1"><v-icon>format_quote</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="green"><icon>publish</icon></btn-link>
+                    <v-btn-link floating class="green"><v-icon>publish</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="blue"><icon>attach_file</icon></btn-link>
+                    <v-btn-link floating class="blue"><v-icon>attach_file</v-icon></v-btn-link>
                 </li>
             </ul>
-        </fab>
+        </v-fab>
         <markup html='
-        <fab icon="list" horizontal>
+        <v-fab icon="list" horizontal>
             <ul slot="items">
                 <li>
-                    <btn-link floating class="red"><icon>insert_chart</icon></btn-link>
+                    <v-btn-link floating class="red"><v-icon>insert_chart</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="yellow darken-1"><icon>format_quote</icon></btn-link>
+                    <v-btn-link floating class="yellow darken-1"><v-icon>format_quote</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="green"><icon>publish</icon></btn-link>
+                    <v-btn-link floating class="green"><v-icon>publish</v-icon></v-btn-link>
                 </li>
                 <li>
-                    <btn-link floating class="blue"><icon>attach_file</icon></btn-link>
+                    <v-btn-link floating class="blue"><v-icon>attach_file</v-icon></v-btn-link>
                 </li>
             </ul>
-        </fab>'
+        </v-fab>'
         ></markup>
         <props :props="fab_props"></props>
     </div>
@@ -103,7 +103,7 @@
 </script>
 
 <style scoped>
-    .btn {
+    .v-btn {
         margin-bottom: 1rem;
     }
 </style>

@@ -7,11 +7,11 @@
         </header>
 
         <main>
-            <div class="container">
-                <div class="row">
+            <v-container>
+                <v-row>
                     <component :is="component" :show="show"></component>
-                </div>
-            </div>
+                </v-row>
+            </v-container>
         </main>
 
         <main-footer></main-footer>
@@ -19,14 +19,12 @@
 </template>
 
 <script>
-    import parser from './utils/parser'
-
     export default {
         name: 'App',
 
         data () {
             return {
-                selected: 'Install'
+                selected: 'Dialog'
             }
         },
 

@@ -1,12 +1,16 @@
 <template>
     <div class="col s12">
+        <h4>Container</h4>
+        <markup html='
+        <v-container></v-container>'
+        ></markup>
         <h4>Row</h4>
         <markup html='
-        <row></row>'
+        <v-row></v-row>'
         ></markup>
         <h4>Grid</h4>
         <markup html='
-        <grid s12 m6 l4></grid>'
+        <v-grid s12 m6 l4></v-grid>'
         ></markup>
         <h4>Info</h4>
         <p>

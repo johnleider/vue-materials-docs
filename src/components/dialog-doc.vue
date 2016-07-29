@@ -1,18 +1,18 @@
 <template>
     <div>
-        <grid s12>
+        <v-grid s12>
             <h4>Examples</h4>
-            <btn-link @click="$dialog('Toast!')">Toast!</btn-link>
+            <v-btn-link @click.native="$dialog('Toast!')">Toast!</v-btn-link>
             <markup html='
-            <btn-link @click="$dialog(&apos;Toast!&apos;)">Toast!</btn-link>'
+            <v-btn-link @click.native="$dialog(&apos;Toast!&apos;)">Toast!</v-btn-link>'
             ></markup>
-            <btn-link @click="$dialog('Rounded Toast!', 3000, 'rounded')">Round Toast!</btn-link>
+            <v-btn-link @click.native="$dialog('Rounded Toast!', 3000, 'rounded')">Round Toast!</v-btn-link>
             <markup html='
-            <btn-link @click="$dialog(&apos;Rounded Toast!&apos;, 3000, &apos;rounded&apos;)">Round Toast!</btn-link>'
+            <v-btn-link @click.native="$dialog(&apos;Rounded Toast!&apos;, 3000, &apos;rounded&apos;)">Round Toast!</v-btn-link>'
             ></markup>
-            <btn-link @click="$dialog('Toast with callback!', 3000, '', callback)">Toast with callback!</btn-link>
+            <v-btn-link @click.native="$dialog('Toast with callback!', 3000, '', callback)">Toast with callback!</v-btn-link>
             <markup html='
-            <btn-link @click="$dialog(&apos;Toast with callback!&apos;, 3000, &apos;&apos;, callback)">Toast with callback!</btn-link>'
+            <v-btn-link @click.native="$dialog(&apos;Toast with callback!&apos;, 3000, &apos;&apos;, callback)">Toast with callback!</v-btn-link>'
             ></markup>
             <h4>Method</h4>
             <markup html='
@@ -22,7 +22,7 @@
                 }
             }'
             ></markup>
-        </grid>
+        </v-grid>
     </div>
 </template>
 

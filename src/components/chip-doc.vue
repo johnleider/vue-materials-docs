@@ -1,21 +1,21 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <chip>Notice</chip>
+        <v-chip>Notice</v-chip>
         <markup html='
-        <chip>Notice</chip>'
+        <v-chip>Notice</v-chip>'
         ></markup>
-        <chip class="blue white-text"
+        <v-chip class="blue white-text"
               close
         >
             Closable
-        </chip>
+        </v-chip>
         <markup html='
-        <chip class="blue white-text"
+        <v-chip class="blue white-text"
               close
         >
             Closable
-        </chip>'
+        </v-chip>'
         ></markup>
         <props :props="props"></props>
     </div>

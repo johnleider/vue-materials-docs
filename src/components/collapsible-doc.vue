@@ -1,76 +1,76 @@
 <template>
     <div class="col s12">
         <h4>Example</h4>
-        <card panel class="center">
-            <row>
-                <grid s12 m4 l4>
-                    <radio with-gap name="type" id="collapsible" v-model="type" val="collapsible">Collapsible</radio>
-                </grid>
-                <grid s12 m4 l4>
-                    <radio with-gap name="type" id="expandable" v-model="type" val="expandable">Expandable</radio>
-                </grid>
-                <grid s12 m4 l4>
-                    <checkbox name="popout" id="popout" v-model="popout">Popout</checkbox>
-                </grid>
-            </row>
-        </card>
-        <collapsible :collapse="collapsible" 
+        <v-card panel class="center">
+            <v-row>
+                <v-grid s12 m4 l4>
+                    <v-radio with-gap name="type" id="collapsible" v-model="type" val="collapsible">Collapsible</v-radio>
+                </v-grid>
+                <v-grid s12 m4 l4>
+                    <v-radio with-gap name="type" id="expandable" v-model="type" val="expandable">Expandable</v-radio>
+                </v-grid>
+                <v-grid s12 m4 l4>
+                    <v-checkbox name="popout" id="popout" v-model="popout">Popout</v-checkbox>
+                </v-grid>
+            </v-row>
+        </v-card>
+        <v-collapsible :collapse="collapsible" 
                      :expand="expandable"
                      :popout="popout"
                      ref="collapse"
         >
             <li>
-                <collapsible-header>
-                    <icon>filter_drama</icon> First
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>filter_drama</v-icon> First
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
             <li>
-                <collapsible-header>
-                    <icon>place</icon> Second
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>place</v-icon> Second
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
             <li>
-                <collapsible-header>
-                    <icon>whatshot</icon> Third
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>whatshot</v-icon> Third
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
-        </collapsible>
+        </v-collapsible>
         <markup html='
-        <collapsible collapse>
+        <v-collapsible collapse>
             <li>
-                <collapsible-header>
-                    <icon>filter_drama</icon> First
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>filter_drama</v-icon> First
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
             <li>
-                <collapsible-header>
-                    <icon>place</icon> Second
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>place</v-icon> Second
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
             <li>
-                <collapsible-header>
-                    <icon>whatshot</icon> Third
-                </collapsible-header>
-                <collapsible-body>
+                <v-collapsible-header>
+                    <v-icon>whatshot</v-icon> Third
+                </v-collapsible-header>
+                <v-collapsible-body>
                     <p>Lorem ipsum dolor sit amet.</p>
-                </collapsible-body>
+                </v-collapsible-body>
             </li>
-        </collapsible>'
+        </v-collapsible>'
         ></markup>
         <props :props="props"></props>
     </div>

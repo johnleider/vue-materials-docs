@@ -1,31 +1,31 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <icon tiny>grade</icon>
+        <v-icon tiny>grade</v-icon>
         <markup html='
-        <icon tiny>grade</icon>'
+        <v-icon tiny>grade</v-icon>'
         ></markup>
-        <icon>flight_land</icon>
+        <v-icon>flight_land</v-icon>
         <markup html='
-        <icon>flight_land</icon>'
+        <v-icon>flight_land</v-icon>'
         ></markup>
-        <icon medium>list</icon>
+        <v-icon medium>list</v-icon>
         <markup html='
-        <icon medium>list</icon>'
+        <v-icon medium>list</v-icon>'
         ></markup>
-        <icon large>bug_report</icon>
+        <v-icon large>bug_report</v-icon>
         <markup html='
-        <icon small>bug_report</icon>'
+        <v-icon small>bug_report</v-icon>'
         ></markup>
         <h4>Icon Prefixs</h4>
         <div class="input-field">
-            <icon prefix>account_circle</icon>
-            <text-input name="name"></text-input>
+            <v-icon prefix>account_circle</v-icon>
+            <v-text-input name="name"></v-text-input>
             <label for="name">Name</label>
         </div>
         <markup html='
         <div class="input-field">
-            <icon prefix>account_circle</icon>
+            <v-icon prefix>account_circle</v-icon>
             <text-input name="name"></text-input>
             <label for="name">Name</label>
         </div>'

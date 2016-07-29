@@ -22,20 +22,20 @@
             Create a <strong>&lt;m-side-nav&gt;</strong> element with an id. Activate it by applying v-side-nav to any element.
         </p>
         <h4>Tooltips</h4>
-        <row>
-            <grid s12 m6 l3>
-                <btn class="red" v-tooltip:top="'Tooltip Top'">Top</btn>
-            </grid>
-            <grid s12 m6 l3>
-                <btn class="red" v-tooltip:right="'Tooltip Right'">Right</btn>
-            </grid>
-            <grid s12 m6 l3>
-                <btn class="red" v-tooltip:bottom="'Tooltip Bottom'">Bottom</btn>
-            </grid>
-            <grid s12 m6 l3>
-                <btn class="red" v-tooltip:left="'Tooltip Left'">Left</btn>
-            </grid>
-        </row>
+        <v-row>
+            <v-grid s12 m6 l3>
+                <v-btn class="red" v-tooltip:top="'Tooltip Top'">Top</v-btn>
+            </v-grid>
+            <v-grid s12 m6 l3>
+                <v-btn class="red" v-tooltip:right="'Tooltip Right'">Right</v-btn>
+            </v-grid>
+            <v-grid s12 m6 l3>
+                <v-btn class="red" v-tooltip:bottom="'Tooltip Bottom'">Bottom</v-btn>
+            </v-grid>
+            <v-grid s12 m6 l3>
+                <v-btn class="red" v-tooltip:left="'Tooltip Left'">Left</v-btn>
+            </v-grid>
+        </v-row>
         <markup html='
         v-tooltip:position="&apos;Content&apos;"'
         ></markup>

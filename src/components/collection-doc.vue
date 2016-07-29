@@ -1,126 +1,126 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <collection>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-        </collection>
+        <v-collection>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+        </v-collection>
         <markup html='
-        <collection>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-        </collection>'
+        <v-collection>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+        </v-collection>'
         ></markup>
-        <collection>
-            <collection-link>Alvin</collection-link>
-            <collection-link active>Alvin</collection-link>
-            <collection-link>Alvin</collection-link>
-            <collection-link>Alvin</collection-link>
-        </collection>
+        <v-collection>
+            <v-collection-link>Alvin</v-collection-link>
+            <v-collection-link active>Alvin</v-collection-link>
+            <v-collection-link>Alvin</v-collection-link>
+            <v-collection-link>Alvin</v-collection-link>
+        </v-collection>
         <markup html='
-        <collection>
-            <collection-link>Alvin</collection-link>
-            <collection-link active>Alvin</collection-link>
-            <collection-link>Alvin</collection-link>
-            <collection-link>Alvin</collection-link>
-        </collection>'
+        <v-collection>
+            <v-collection-link>Alvin</v-collection-link>
+            <v-collection-link active>Alvin</v-collection-link>
+            <v-collection-link>Alvin</v-collection-link>
+            <v-collection-link>Alvin</v-collection-link>
+        </v-collection>'
         ></markup>
         <h4>With Header</h4>
-        <collection with-header>
-            <collection-item header>
+        <v-collection with-header>
+            <v-collection-item header>
                 <h3>First Name</h3>
-            </collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-        </collection>
+            </v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+        </v-collection>
         <markup html='
-        <collection with-header>
-            <collection-item header>
+        <v-collection with-header>
+            <v-collection-item header>
                 <h3>First Name</h3>
-            </collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-            <collection-item>Alvin</collection-item>
-        </collection>'
+            </v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+            <v-collection-item>Alvin</v-collection-item>
+        </v-collection>'
         ></markup>
         <h4>Secondary Content</h4>
-        <collection>
-            <collection-item>
+        <v-collection>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-        </collection>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+        </v-collection>
         <markup html='
-        <collection>
-            <collection-item>
+        <v-collection>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-            <collection-item>
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+            <v-collection-item>
                 Alvin
-                <span slot="secondary"><icon>send</icon></span>
-            </collection-item>
-        </collection>'
+                <span slot="secondary"><v-icon>send</v-icon></span>
+            </v-collection-item>
+        </v-collection>'
         ></markup>
         <h4>Avatar</h4>
-        <collection>
-            <collection-avatar src="http://materializecss.com/images/yuna.jpg">
+        <v-collection>
+            <v-collection-avatar src="http://materializecss.com/images/yuna.jpg">
                 <span class="title">Title</span>
                 <p>First Line <br>
                     Second Line
                 </p>
-                <span slot="secondary"><icon>star</icon></span>
-            </collection-avatar>
-            <collection-avatar src="http://materializecss.com/images/yuna.jpg">
+                <span slot="secondary"><v-icon>star</v-icon></span>
+            </v-collection-avatar>
+            <v-collection-avatar src="http://materializecss.com/images/yuna.jpg">
                 <span class="title">Title</span>
                 <p>First Line <br>
                     Second Line
                 </p>
-                <span slot="secondary"><icon>star</icon></span>
-            </collection-avatar>
-        </collection>
+                <span slot="secondary"><v-icon>star</v-icon></span>
+            </v-collection-avatar>
+        </v-collection>
         <markup html='
-        <collection>
-            <collection-avatar src="http://materializecss.com/images/yuna.jpg">
+        <v-collection>
+            <v-collection-avatar src="http://materializecss.com/images/yuna.jpg">
                 <span class="title">Title</span>
                 <p>First Line <br>
                     Second Line
                 </p>
-                <span slot="secondary"><icon>star</icon></span>
-            </collection-avatar>
-            <collection-avatar src="http://materializecss.com/images/yuna.jpg">
+                <span slot="secondary"><v-icon>star</v-icon></span>
+            </v-collection-avatar>
+            <v-collection-avatar src="http://materializecss.com/images/yuna.jpg">
                 <span class="title">Title</span>
                 <p>First Line <br>
                     Second Line
                 </p>
-                <span slot="secondary"><icon>star</icon></span>
-            </collection-avatar>
-        </collection>'
+                <span slot="secondary"><v-icon>star</v-icon></span>
+            </v-collection-avatar>
+        </v-collection>'
         ></markup>
         <props :props="props"></props>
     </div>

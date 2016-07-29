@@ -1,5 +1,5 @@
 <template>
-    <m-nav class="nav-header">
+    <v-nav class="nav-header">
         <div>
             <h1 class="page-title">
                 <a href="#!"
@@ -7,12 +7,12 @@
                    v-side-nav:side-nav="nav"
                    ref="nav"
                 >
-                    <icon>menu</icon>
+                    <v-icon>menu</v-icon>
                 </a>
                 {{ title }}
             </h1>
         </div>
-        <m-side-nav slot="side-nav"
+        <v-side-nav slot="side-nav"
                     id="side-nav"
                     fixed
         >
@@ -26,30 +26,30 @@
                     ></a>
                 </li>
                 <li class="no-padding" v-else>
-                    <collapsible collapse >
+                    <v-collapsible collapse >
                         <li>
-                            <collapsible-header class="black-text waves-effect waves-teal"
+                            <v-collapsible-header class="black-text waves-effect waves-teal"
                                                 ref="collapse"
                             >
                                 {{ key }}
-                            </collapsible-header>
-                            <collapsible-body>
+                            </v-collapsible-header>
+                            <v-collapsible-body>
                                 <ul>
                                     <li v-for="item in value"
                                         :class="{ 'active': title === item }"
                                     >
                                         <a :href="item" 
                                            @click.prevent="select(item)"
-                                        >{{ item }} <badge new v-if="item === 'Forms'"></badge></a>
+                                        >{{ item }} <v-badge new v-if="item === 'Forms'"></v-badge></a>
                                     </li>
                                 </ul>
-                            </collapsible-body>
+                            </v-collapsible-body>
                         </li>
-                    </collapsible>
+                    </v-collapsible>
                 </li>
             </template>
-        </m-side-nav>
-    </m-nav>
+        </v-side-nav>
+    </v-nav>
 </template>
 
 <script>

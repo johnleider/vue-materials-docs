@@ -1,8 +1,8 @@
 <template>
     <div class="col s12">
         <h4>Examples</h4>
-        <btn v-dropdown:dropdown>dropdown</btn>
-        <dropdown id="dropdown">
+        <v-btn v-dropdown:dropdown>dropdown</v-btn>
+        <v-dropdown id="dropdown">
             <li>
                 <a href="#!">Click me!</a>
             </li>
@@ -12,10 +12,10 @@
             <li>
                 <a href="#!">Click me!</a>
             </li>
-        </dropdown>
+        </v-dropdown>
         <markup html='
-        <btn v-dropdown:dropdown>dropdown</btn>
-        <dropdown id="dropdown">
+        <v-btn v-dropdown:dropdown>dropdown</v-btn>
+        <v-dropdown id="dropdown">
             <li>
                 <a href="#!">Click me!</a>
             </li>
@@ -25,11 +25,11 @@
             <li>
                 <a href="#!">Click me!</a>
             </li>
-        </dropdown>'
+        </v-dropdown>'
         ></markup>
         <h4>Hover</h4>
-        <btn v-dropdown:dropdown2 class="red" hover>dropdown</btn>
-        <dropdown id="dropdown2">
+        <v-btn v-dropdown:dropdown2 class="red" hover>dropdown</v-btn>
+        <v-dropdown id="dropdown2">
             <li>
                 <a href="#!">Click me!</a>
             </li>
@@ -39,10 +39,10 @@
             <li>
                 <a href="#!">Click me!</a>
             </li>
-        </dropdown>
+        </v-dropdown>
         <markup html='
-        <btn v-dropdown:dropdown2 class="red" hover>dropdown</btn>
-        <dropdown id="dropdown2">
+        <v-btn v-dropdown:dropdown2 class="red" hover>dropdown</v-btn>
+        <v-dropdown id="dropdown2">
             <li>
                 <a href="#!">Click me!</a>
             </li>
@@ -52,7 +52,7 @@
             <li>
                 <a href="#!">Click me!</a>
             </li>
-        </dropdown>'
+        </v-dropdown>'
         ></markup>
         <props :props="props"></props>
     </div>

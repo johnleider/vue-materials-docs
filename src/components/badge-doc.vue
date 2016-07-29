@@ -1,35 +1,35 @@
 <template>
     <div class="col s12">
         <h4>In Collections</h4>
-        <collection>
-            <collection-item>
+        <v-collection>
+            <v-collection-item>
                 Alan
-                <badge new slot="secondary"></badge>
-            </collection-item>
-            <collection-item>
+                <v-badge new slot="secondary"></badge>
+            </v-collection-item>
+            <v-collection-item>
                 Alan
-                <badge new class="blue" slot="secondary"></badge>
-            </collection-item>
-            <collection-item>
+                <v-badge new class="blue" slot="secondary"></badge>
+            </v-collection-item>
+            <v-collection-item>
                 Alan
-                <badge new class="red" slot="secondary"></badge>
-            </collection-item>
-            <collection-item>
+                <v-badge new class="red" slot="secondary"></badge>
+            </v-collection-item>
+            <v-collection-item>
                 Alan
-                <badge new class="purple" slot="secondary"></badge>
-            </collection-item>
-        </collection>
+                <v-badge new class="purple" slot="secondary"></badge>
+            </v-collection-item>
+        </v-collection>
         <markup html='
-        <collection-item>
+        <v-collection-item>
             Alan
-            <badge new slot="secondary"></badge>
-        </collection-item>'
+            <v-badge new slot="secondary"></badge>
+        </v-collection-item>'
         ></markup>
         <h4>In Dropdowns</h4>
-        <btn v-dropdown:dropdown>Dropdown</btn>
-        <dropdown id="dropdown">
+        <v-btn v-dropdown:dropdown>Dropdown</v-btn>
+        <v-dropdown id="dropdown">
             <li>
-                <a href="#">Click me <badge new></badge></a>
+                <a href="#">Click me <v-badge new></v-badge></a>
             </li>
             <li>
                 <a href="#">Click me</a>
@@ -37,12 +37,12 @@
             <li>
                 <a href="#">Click me</a>
             </li>
-        </dropdown>
+        </v-dropdown>
         <markup html='
-        <btn v-dropdown:dropdown>Dropdown</btn>
-        <dropdown id="dropdown">
+        <v-btn v-dropdown:v-dropdown>Dropdown</btn>
+        <v-dropdown id="dropdown">
             <li>
-                <a href="#">Click me <badge new></badge></a>
+                <a href="#">Click me <v-badge new></v-badge></a>
             </li>
             <li>
                 <a href="#">Click me</a>
@@ -50,14 +50,14 @@
             <li>
                 <a href="#">Click me</a>
             </li>
-        </dropdown>'
+        </v-dropdown>'
         ></markup>
         <h4>In Navbars</h4>
-        <m-nav>
+        <v-nav>
             <a href="#!" slot="logo" class="brand-logo hide-on-med-and-down">Logo</a>
             <ul class="right">
                 <li>
-                    <a href="#!">sass <badge new></badge></a>
+                    <a href="#!">sass <v-badge new></v-badge></a>
                 </li>
                 <li>
                     <a href="#!">sass</a>
@@ -66,13 +66,13 @@
                     <a href="#!">sass</a>
                 </li>
             </ul>
-        </m-nav>
+        </v-nav>
         <markup html='
-        <m-nav>
+        <v-nav>
             <a href="#!" slot="logo" class="brand-logo">Logo</a>
             <ul class="right">
                 <li>
-                    <a href="#!">sass <badge new></badge></a>
+                    <a href="#!">sass <v-badge new></v-badge></a>
                 </li>
                 <li>
                     <a href="#!">sass</a>
@@ -81,7 +81,7 @@
                     <a href="#!">sass</a>
                 </li>
             </ul>
-        </m-nav>'
+        </v-nav>'
         ></markup>
         <props :props="props"></props>
     </div>

@@ -1,28 +1,28 @@
 <template>
     <div class="col s12">
         <h4>Determinate</h4>
-        <range v-model="range"></range>
-        <progress-linear determinate 
+        <v-range v-model="range"></v-range>
+        <v-progress-linear determinate 
                          v-model="width_l"
-        ></progress-linear>
+        ></v-progress-linear>
         <markup html='
-        <progress-linear determinate 
+        <v-progress-linear determinate 
                          width="50%"
-        ></progress-linear>'
+        ></v-progress-linear>'
         ></markup>
         <h4>Indeterminate</h4>
-        <progress-linear indeterminate></progress-linear>
+        <v-progress-linear indeterminate></v-progress-linear>
         <markup html='
-        <progress-linear indeterminate></progress-linear>'
+        <v-progress-linear indeterminate></v-progress-linear>'
         ></markup>
         <h4>Model</h4>
-        <progress-linear determinate 
+        <v-progress-linear determinate 
                          v-model="width"
-        ></progress-linear>
+        ></v-progress-linear>
         <markup html='
-        <progress-linear determinate 
+        <v-progress-linear determinate 
                          v-model="width"
-        ></progress-linear>'
+        ></v-progress-linear>'
         ></markup>
         <markup html="
         export default {
