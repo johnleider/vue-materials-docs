@@ -5,21 +5,21 @@
         v-dropdown:id'
         ></markup>
         <p>
-            Create a <strong>&lt;dropdown&gt;</strong> element with an id. Activate it by applying v-dropdown to any element.
+            Create a <strong>&lt;v-dropdown&gt;</strong> element with an id. Activate it by applying v-dropdown to any element.
         </p>
         <h4>Modals</h4>
         <markup html='
         v-modal:id="params"'
         ></markup>
         <p>
-            Create a <strong>&lt;modal&gt;</strong> element with an id. Activate it by applying v-modal to any element. Pass modal parameters through the expression.
+            Create a <strong>&lt;v-modal&gt;</strong> element with an id. Activate it by applying v-modal to any element. Pass modal parameters through the expression.
         </p>
         <h4>Side-Navs</h4>
         <markup html='
         v-side-nav:id'
         ></markup>
         <p>
-            Create a <strong>&lt;m-side-nav&gt;</strong> element with an id. Activate it by applying v-side-nav to any element.
+            Create a <strong>&lt;v-side-nav&gt;</strong> element with an id. Activate it by applying v-side-nav to any element.
         </p>
         <h4>Tooltips</h4>
         <v-row>

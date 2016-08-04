@@ -41,6 +41,7 @@
         methods: {
             select (component) {
                 this.selected = component
+                window.scrollTo(0, 0)
             }
         }
     }
