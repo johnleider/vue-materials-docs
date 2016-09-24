@@ -22,7 +22,7 @@
         </v-nav>'
         ></markup>
         <h4>With Icons</h4>
-        <v-nav>
+        <v-nav nav-class="blue">
             <a href="#!" class="brand-logo" slot="logo">Logo</a>
             <ul class="right">
                 <li>
@@ -49,7 +49,7 @@
             </li>
         </v-dropdown>
         <markup html='
-        <v-nav>
+        <v-nav nav-class="blue">
             <a href="#!" class="brand-logo" slot="logo">Logo</a>
             <ul class="right">
                 <li>
@@ -85,7 +85,8 @@
         data () {
             return {                
                 props: [
-                    ['fixed', 'boolean']
+                    ['fixed', 'boolean'],
+                    ['nav-class', 'string'],
                 ]
             }
         }

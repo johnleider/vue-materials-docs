@@ -40,7 +40,7 @@
                                     >
                                         <a :href="item" 
                                            @click.prevent="select(item)"
-                                        >{{ item }} <v-badge new v-if="item === 'Forms'"></v-badge></a>
+                                        >{{ item }}</a>
                                     </li>
                                 </ul>
                             </v-collapsible-body>
