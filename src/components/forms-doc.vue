@@ -127,7 +127,7 @@
                 <label for="select2">Select</label>
             </div>'
             ></markup>
-            <props :props="[['items', 'array'], ['v-model', 'string, number, array (multiple)']]"></props>
+            <props :props="[['items', 'array, object values, [id, text]'], ['v-model', 'string, number, array (multiple)']]"></props>
         </v-grid>
         <v-grid s12>
             <h4>Radios</h4>
