@@ -27,7 +27,7 @@
     "vue": "^2.0.0-alpha.8",
     "vue-hot-reload-api": "^2.0.5",
     "vue-loader": "^9.0.0",
-    "vue-materials": "^1.0.1-rc.1",
+    "vue-materials": "^1.0.5-rc.6",
     "vue-resource": "^0.9.3",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0",
