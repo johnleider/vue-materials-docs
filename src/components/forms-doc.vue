@@ -7,10 +7,12 @@
                 <v-text-input name="first"
                             id="first"
                             placeholder="First Name"
+                            v-model="test"
                 ></v-text-input>
                 <label for="first"
                        class="active"
                 >First Name</label>
+                {{ test }}
             </div>
         </v-grid>
         <v-grid s6>
@@ -321,6 +323,7 @@
     export default {
         data () {
             return {
+                test: 1,
                 range_props: [
                     ['min', 'string, number'],
                     ['max', 'string, number'],
