@@ -4,11 +4,11 @@
   "author": "John Leider <john.j.leider@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --host=0.0.0.0",
+    "dev": "webpack-dev-server --inline --hot --host=0.0.0.0 --port=8081",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.0.0-beta.6"
+    "vue": "^2.1.3"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
@@ -30,6 +30,7 @@
     "vue-materials": "^1.0.1-rc.1",
     "vue-resource": "^0.9.3",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0"
+    "webpack-dev-server": "^1.12.0",
+    "webpack-link": "^0.2.0"
   }
 }
