@@ -20,9 +20,9 @@
         ></markup>
         <h4>Flashing</h4>
         <v-row>
-            <v-grid s4><v-progress-circular active red red-flash></v-progress-circular></v-grid>
-            <v-grid s4><v-progress-circular active green></v-progress-circular></v-grid>
-            <v-grid s4><v-progress-circular active blue></v-progress-circular></v-grid>
+            <v-grid s4><v-progress-circular active red-flash></v-progress-circular></v-grid>
+            <v-grid s4><v-progress-circular active green-flash></v-progress-circular></v-grid>
+            <v-grid s4><v-progress-circular active blue-flash></v-progress-circular></v-grid>
         </v-row>
         <markup html='
         <v-progress-circular active red red-flash></v-progress-circular>'
