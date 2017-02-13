@@ -33,7 +33,6 @@ import TextInputDoc from './text-input-doc.vue'
 import TextAreaDoc from './text-area-doc.vue'
 import Markup from './markup.vue'
 import Props from './props.vue'
-import Waves from './waves.vue'
 import DirectivesDoc from './directives-doc.vue'
 import InstallDoc from './install-doc.vue'
 import DialogDoc from './dialog-doc.vue'
@@ -46,7 +45,6 @@ export default {
     DirectivesDoc,
     FunctionalDoc,
     Props,
-    Waves,
     Markup,
     RangeDoc,
     RadioDoc,
