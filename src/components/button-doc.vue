@@ -36,6 +36,7 @@
         <markup html='
         <v-btn-link href="#!">Button</v-btn-link>'></markup>
         <props :props="button_props"></props>
+        <waves :waves="button_waves"></waves>
         <h4>Fixed Action Button</h4>
         <v-fab icon="list" horizontal>
             <ul slot="items">
@@ -96,6 +97,16 @@
                 fab_props: [
                     ['horizontal', 'boolean'],
                     ['clickable', 'boolean']
+                ],
+                button_waves: [
+                    ['wavesCircle', 'boolean'],
+                    ['wavesLight', 'boolean'],
+                    ['wavesOrange', 'boolean'],
+                    ['wavesPurple', 'boolean'],
+                    ['wavesGreen', 'boolean'],
+                    ['wavesTeal', 'boolean'],
+                    ['wavesRed', 'boolean'],
+                    ['wavesYellow', 'boolean'],
                 ]
             }
         }
